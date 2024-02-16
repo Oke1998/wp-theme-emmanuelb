@@ -1,0 +1,225 @@
+/**
+ * Accueil
+ */
+.main-title
+	text-align center
+	font-family fonts-stack-headings
+	line-height 1
+	margin-bottom 2em
+	word-wrap break-word
+
+.hcard
+	&__name
+		font-size 2.15em
+		color color-code
+
+	&__age
+		color color-links
+		font-size 1.6em
+
+	&__status
+		color #fff
+		font-size 1.6em
+		margin-left 15px
+
+	&__job
+		color color-emphasis
+		font-size 1.65em
+
+	&__job--alt
+		color color-headings
+		font-size 2em
+
+.skill
+	&__list
+		margin 0 0 10px 0
+		padding 0
+		list-style none
+		display inline-block
+		vertical-align top
+
+		& + &
+			margin-left 2.143em
+
+	&__item
+		width 12.96em
+		width calc(15em - 2.05em)
+		margin-bottom 10px
+		padding-bottom 10px
+		position relative
+
+		&:before
+			position absolute
+			bottom 0
+			left 0
+			right 0
+			content " "
+			height 6px
+			background lighten(color-background, 10%)
+			z-index 4
+
+		&:after
+			position absolute
+			bottom 0
+			left 0
+			content ""
+			height 6px
+			background color-code
+			z-index 5
+			transition .5s
+			width 0
+
+		&--animation[data-skill="10"]:after
+			width 10%
+
+		&--animation[data-skill="20"]:after
+			width 20%
+
+		&--animation[data-skill="30"]:after
+			width 30%
+
+		&--animation[data-skill="40"]:after
+			width 40%
+
+		&--animation[data-skill="50"]:after
+			width 50%
+
+		&--animation[data-skill="60"]:after
+			width 60%
+
+		&--animation[data-skill="70"]:after
+			width 70%
+
+		&--animation[data-skill="80"]:after
+			width 80%
+
+		&--animation[data-skill="90"]:after
+			width 90%
+
+		&--animation[data-skill="100"]:after
+			width 100%
+
+/**
+ * Portfolio
+ **/
+.portfolio
+
+	&-list
+		clearfix()
+		width (width-content + 1.250)
+		margin 40px 0 0 -20px
+
+	&__item
+		float left
+		margin 0 0 20px 20px
+		box-shadow 0 0 5px #222528
+
+	&__link
+		display block
+		width 340px
+		height 160px
+		position relative
+		overflow hidden
+
+		&:hover
+		&:focus
+			.portfolio-caption
+				opacity 1
+				transform translateY(0)
+				transition opacity .4s ease-in, transform .2s ease-in
+
+				&__title
+				.portfolio-categories
+					transform translateY(0)
+					transition all .6s ease
+
+	&__image
+		text-align center
+
+	&__thumbnail
+		display inline-block
+		max-width 100%
+		vertical-align bottom
+
+	&-caption
+		opacity 0
+		position absolute
+		absoluteLock(0)
+		background rgba(0,0,0,.6)
+		padding 10px
+		text-shadow 0 1px 4px rgba(0,0,0,0.5)
+		transition all .4s ease-out, opacity .6s ease-out
+		transform translateY(50%)
+
+		&__title
+			color color-text
+			font-size 2.25em
+			margin 0 0 10px
+			transform translateY(100%)
+			transition tranform 2s ease
+
+	&-red
+		background color-links
+	&-blue
+		background color-headings
+	&-green
+		background color-code
+	&-yellow
+		background color-emphasis
+	&-pink
+		background color-strong
+	&-black
+		background lighten(color-background, 5%)
+
+	&__thanks
+		color color-code
+		text-align right
+		i
+			color color-links
+
+	&-categories
+		position absolute
+		absoluteLock(auto, 10px, 10px, auto)
+		transform translateY(100%)
+		transition tranform 2s ease
+
+		&__item
+			display inline-block
+			color color-text
+			i
+				font-size 2.25em
+				width auto
+				height auto
+
+/**
+ * Page single portfolio
+ */
+.portfolio-single
+
+	&__thumbnail
+		text-align center
+		border-radius 4px
+		padding 40px 0
+
+	&__title
+		margin .6em 0 0
+
+	&__header
+		margin-bottom 40px
+
+	&-meta
+
+		&__label
+			font-weight 700
+			color color-emphasis
+			margin-right 20px
+
+		&__category
+			margin-right 10px
+
+			i
+				vertical-align baseline
+				width auto
+				height auto
+				color color-code
+				font-size 1.25em

@@ -1,0 +1,430 @@
+article
+aside
+details
+figcaption
+figure
+footer
+header
+main
+nav
+section
+	display block
+
+audio
+canvas
+video
+	display inline-block
+	max-width 100%
+
+html
+	height 100%
+	overflow-y scroll
+	-webkit-text-size-adjust 100%
+	-ms-text-size-adjust 100%
+
+body
+	height 100%
+	background color-background
+	color color-text
+	margin 0
+	font 400 font-size-root/1.5em fonts-stack-common
+
+a
+	text-decoration none
+	transition all .1s ease-in-out
+	color color-links
+
+	img
+		border 0
+
+	&:focus
+		outline thin dotted
+
+	&:active
+	&:hover
+		outline 0
+		color color-emphasis
+
+	&[target="_blank"]::after
+		display inline-block
+		width 16px
+		height 16px
+		-webkit-font-smoothing antialiased
+		-moz-osx-font-smoothing grayscale
+		font-size 16px
+		line-height 1
+		font-family emmanuelb
+		vertical-align top
+		content '\e84c'
+
+h1
+	color color-code
+	font 3.6em/1em fonts-stack-headings
+
+h2
+	color color-headings
+	font 3.2em/1em fonts-stack-headings
+	margin 2em 0 .4em
+
+h3
+	font 2em/1em fonts-stack-headings
+	margin 1.6em 0 .3em
+
+h2:first-child
+h3:first-child
+h4:first-child
+	margin-top 0
+
+address
+	font-style italic
+	margin-bottom 1.714em
+
+abbr[title]
+	border-bottom 1px dotted #2b2b2b
+	cursor help
+
+b
+strong
+	font-weight 700
+	color color-emphasis
+
+cite
+dfn
+em
+i
+	font-style italic
+
+em
+	color color-emphasis
+
+ins
+mark
+	background #fff9c0
+	text-decoration none
+
+code
+pre
+var
+kbd
+	font-family monospace, serif
+	hyphens none
+
+pre
+	box-sizing border-box
+	max-width 100%
+	overflow auto
+	white-space pre
+	white-space pre-wrap
+	word-wrap break-word
+
+blockquote
+q
+	hyphens none
+	quotes none
+
+blockquote
+	position relative
+	font-style italic
+	font-size 1.25em
+	margin 2em 0 2em 60px
+
+	&::after
+	&::before
+		content ""
+		content none
+
+	&::before
+		content '\f106'
+		font 2.2em Genericons
+		position absolute
+		left -60px
+		top -15px
+		color color-text
+
+	cite
+	small
+		color #2b2b2b
+		font-size 1.143em
+		font-weight 400
+		line-height 1.5
+
+	cite
+	em
+	i
+		color #ddd
+
+	& > p:first-child
+		margin-top 0
+
+	& > p:last-of-type
+		margin-bottom 0
+
+	footer
+	small
+	.small
+		margin-left 15px
+		display block
+		font-size 80%
+		line-height 1.42857143
+		color color-emphasis
+		padding-top 10px
+
+		&::before
+			content '— '
+
+q
+	color color-emphasis
+	font-style italic
+
+	&::before
+		content "«\00A0"
+	&::after
+		content '\00A0»'
+
+a q
+	color inherit
+
+small
+.small
+	font-size 85%
+	color inherit
+	vertical-align baseline
+
+big
+	font-size 125%
+
+sub
+sup
+	font-size 75%
+	height 0
+	line-height 0
+	position relative
+	vertical-align baseline
+
+sup
+	bottom 1ex
+
+sub
+	top .5ex
+
+dl
+	margin-bottom 1.7em
+
+dt
+	font-weight 700
+
+dd
+	margin-bottom 1.7em
+
+ol
+ul
+	margin 0 0 24px 20px
+
+ul
+	list-style disc
+
+ol
+	list-style decimal
+
+li > ol
+li > ul
+	margin 0 0 0 20px
+
+img
+	-ms-interpolation-mode bicubic
+	border 0
+	vertical-align middle
+
+figure
+	margin 10px
+
+figcaption
+	font-size .85em
+	font-weight 200
+	margin-top 4px
+
+fieldset
+	border 1px solid rgba(0, 0, 0, .1)
+	margin 0 0 24px
+	padding 11px 12px 0
+
+legend
+	white-space normal
+
+button
+input
+select
+textarea
+	box-sizing border-box
+	font-size 100%
+	margin 0
+	max-width 100%
+	vertical-align baseline
+	padding 5px
+	border 0
+	font 400 1em/1.5 fonts-stack-common
+	background transparent
+	transition all .4s ease
+	color #eee
+	cursor text
+
+button
+input
+	line-height normal
+
+button
+html input[type="button"]
+input[type="reset"]
+input[type="submit"]
+	-webkit-appearance button
+	cursor pointer
+
+button[disabled]
+input[disabled]
+	cursor default
+
+input[type="checkbox"]
+input[type="radio"]
+	padding 0
+
+input[type="search"]
+	-webkit-appearance textfield
+
+input[type="search"]::-webkit-search-decoration
+	-webkit-appearance none
+
+input[type="text"]
+input[type="tel"]
+input[type="url"]
+input[type="email"]
+input[type="search"]
+textarea
+	cursor text
+	font-weight 300
+
+button::-moz-focus-inner
+input::-moz-focus-inner
+	border 0
+	padding 0
+
+textarea
+	overflow auto
+	height 8em
+	max-height 8em
+	resize vertical
+
+input:focus
+textarea:focus
+	outline 0
+
+::-webkit-input-placeholder
+	color rgba(240,240,240,.6)
+
+::-moz-placeholder
+	color rgba(240,240,240,.6)
+
+:-ms-input-placeholder
+	color rgba(240,240,240,.6)
+
+button
+.button
+[type="button"]
+[type="submit"]
+	display inline-block
+	margin-bottom 0
+	font-weight 400
+	text-align center
+	vertical-align middle
+	touch-action manipulation
+	cursor pointer
+	background-image none
+	white-space nowrap
+	padding 0 16px
+	transition all .4s ease
+	border-radius 2px
+	height 2.25em
+	line-height 2.25em
+	font-size 1em
+	background-color color-code
+	text-transform uppercase
+
+	.gi
+		vertical-align middle
+		font-size 1.6em
+		line-height 1.6em
+		width 1.6em
+		height 1.6em
+
+
+[type="submit"]:hover
+[type="submit"]:focus
+	background color-emphasis
+	outline none
+
+[type="submit"]:active
+	background color-links
+	outline none
+
+// Specificity overrides
+input[type="submit"]
+input[type="reset"]
+input[type="button"]
+	&.btn-block
+		width auto
+
+label
+	display block
+	margin 0
+	font 300 1em/1 fonts-stack-common
+
+table
+td
+th
+	border 1px solid rgba(0, 0, 0, .1)
+
+table
+	border-collapse separate
+	border-spacing 0
+	border-width 1px 0 0 1px
+	margin-bottom 24px
+	width 100%
+
+caption
+td
+th
+	font-weight 400
+	text-align left
+
+th
+	border-width 0 1px 1px 0
+	font-weight 700
+
+td
+	border-width 0 1px 1px 0
+
+dt
+	font-weight 700
+
+del
+	color inherit
+	text-decoration line-through
+
+hr
+	background-color rgba(0, 0, 0, .1)
+	border 0
+	height 1px
+	margin-bottom 23px
+
+kbd
+	border 1px solid color-text
+	border-radius 2px
+
+::-moz-selection
+	background color-emphasis
+	color color-background
+	text-shadow none
+
+::selection
+	background color-emphasis
+	color color-background
+	text-shadow none
